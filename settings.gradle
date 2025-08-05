@@ -1,0 +1,8 @@
+rootProject.name = 'food-delivery-app'
+
+
+include("user-service")
+include("restaurant-service")
+include("cart-service")
+include("order-service")
+include("delivery-service")

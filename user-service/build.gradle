@@ -34,6 +34,7 @@ dependencies {
         // If you're using Lombok too
         annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
 
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
 
 }
 

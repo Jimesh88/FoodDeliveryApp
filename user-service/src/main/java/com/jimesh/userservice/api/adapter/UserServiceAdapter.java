@@ -17,15 +17,15 @@ public class UserServiceAdapter {
         return mapper.toDto(service.createUser(mapper.toDomain(userDto)));
     }
 
-    public UserDto getUser(UUID id) {
+    public UserDto getUser(Integer id) {
         return mapper.toDto(service.getUserById(id));
     }
 
-    public UserDto updateUser(UUID id, UserDto userDto) {
+    public UserDto updateUser(Integer id, UserDto userDto) {
         return mapper.toDto(service.updateUser(id, mapper.toDomain(userDto)));
     }
 
-    public void deleteUser(UUID id) {
+    public void deleteUser(Integer id) {
         service.deleteUser(id);
     }
 }

@@ -9,7 +9,7 @@ import java.util.UUID;
 @Setter
 public class OrderDto {
     private UUID id;
-    private UUID userId;
+    private Integer userId;
     private  UUID restaurantId;
     private List<UUID> itemIds;
     private double totalPrice;

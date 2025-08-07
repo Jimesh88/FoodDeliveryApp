@@ -18,7 +18,7 @@ public class OrderEntity {
     private UUID id;
 
     @Column(nullable = false)
-    private UUID userId;
+    private Integer userId;
 
     @ElementCollection
     @CollectionTable(name = "order_items", joinColumns = @JoinColumn(name = "order_id"))

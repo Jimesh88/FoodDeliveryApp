@@ -4,6 +4,7 @@ import com.jimesh.orderservice.domain.model.Order;
 import com.jimesh.orderservice.domain.service.IOrderService;
 import com.jimesh.orderservice.dto.OrderDto;
 import lombok.RequiredArgsConstructor;
+import org.openapitools.client.api.DefaultApi;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +21,7 @@ public class OrderServiceAdapter  {
 
     private final IOrderService orderService;
     private final OrderApiMapper orderApiMapper;
+
 
     @PostMapping
     public ResponseEntity<OrderDto> createOrder(@RequestBody OrderDto orderDto) {

@@ -22,21 +22,21 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public User getUserById(UUID id) {
+    public User getUserById(Integer id) {
         return repository.findById(id)
                 .map(mapper::toDomain)
                 .orElseThrow(() -> new RuntimeException("User not found"));
     }
 
     @Override
-    public User updateUser(UUID id, User user) {
+    public User updateUser(Integer id, User user) {
         UserEntity entity = mapper.toEntity(user);
         entity.setId(id);
         return mapper.toDomain(repository.save(entity));
     }
 
     @Override
-    public void deleteUser(UUID id) {
+    public void deleteUser(Integer id) {
         repository.deleteById(id);
     }
 }

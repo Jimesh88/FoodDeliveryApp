@@ -17,7 +17,7 @@ public class UserEntity {
 
     @Id
     @GeneratedValue
-    private UUID id;
+    private Integer id;
 
     private String name;
     private String email;

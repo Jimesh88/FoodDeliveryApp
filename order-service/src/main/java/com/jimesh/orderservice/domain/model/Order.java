@@ -12,7 +12,7 @@ import java.util.List;
 @Builder
 public class Order {
     private UUID id;
-    private UUID userId;
+    private Integer userId;
     private List<UUID> itemIds;
     private UUID restaurantId;
     private double totalPrice;

@@ -32,6 +32,8 @@ dependencies {
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
     // If you're using Lombok too
     annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
+    implementation project(':user-service-client')
+
 }
 
 test {

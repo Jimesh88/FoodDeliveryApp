@@ -1,8 +1,9 @@
 rootProject.name = 'food-delivery-app'
 
-
+include 'food_delivery_app'
 include("user-service")
 include("restaurant-service")
 include("cart-service")
 include("order-service")
 include("delivery-service")
+include ("user-service-client")

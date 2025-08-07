@@ -13,24 +13,19 @@ java {
 	}
 }
 
-// Apply repositories to all modules (very important!)
-allprojects {
-	repositories {
-		mavenCentral()
-	}
+repositories {
+	mavenCentral()
 }
 
-// Shared config for all submodules (not for root)
-subprojects {
-	apply plugin: 'java'
-	apply plugin: 'io.spring.dependency-management'
+dependencies {
+	// Required to resolve Spring Boot main class imports in the root module
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 
-	dependencies {
-		testImplementation 'org.springframework.boot:spring-boot-starter-test'
-		testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-	}
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
 
-	tasks.named('test') {
-		useJUnitPlatform()
-	}
+tasks.named('test') {
+	useJUnitPlatform()
 }

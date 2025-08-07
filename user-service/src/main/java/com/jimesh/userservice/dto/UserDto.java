@@ -8,7 +8,7 @@ import java.time.OffsetDateTime;
 @Getter
 @Setter
 public class UserDto {
-    private String id;
+    private Integer id;
     private String name;
     private String email;
     private String phone;

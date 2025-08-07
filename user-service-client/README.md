@@ -4,7 +4,7 @@ User Service API
 
 - API version: 1.0.0
 
-- Build date: 2025-08-07T10:29:21.224797+05:30[Asia/Kolkata]
+- Build date: 2025-08-07T10:50:50.869823+05:30[Asia/Kolkata]
 
 - Generator version: 7.14.0
 

@@ -46,7 +46,7 @@ class DefaultApiTest {
     void getUserTest() {
         Integer id = null;
 
-        UserDto response = api.getUser(id);
+        UserDto response = api.getUser(id).block(); // blocking call for testing only
 
         // TODO: test validations
     }

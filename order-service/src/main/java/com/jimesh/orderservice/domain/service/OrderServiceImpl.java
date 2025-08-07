@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.openapitools.client.api.DefaultApi;
 import org.openapitools.client.model.UserDto;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Mono;
 
 import java.time.OffsetDateTime;
 import java.util.List;
@@ -25,18 +26,19 @@ public class OrderServiceImpl implements IOrderService {
 
     private final DefaultApi userApi;
 
+
     @Override
     public Order createOrder(Order order) {
-
         try {
-            UserDto user = userApi.getUser(order.getUserId());
-            System.out.println("User fetched from user-service: " + user.getName());
 
+            Mono<UserDto> userMono = userApi.getUser(order.getUserId());
+            UserDto user = userMono.block(); // Use block() only if you're in non-reactive code
+
+            System.out.println("Order placed for user: " + user.getName());
         } catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException("User service call failed", e);
         }
-
 
         return mapper.toDomain(repository.save(mapper.toEntity(order)));
     }

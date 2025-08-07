@@ -31,24 +31,24 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   UserDto.JSON_PROPERTY_NAME,
   UserDto.JSON_PROPERTY_EMAIL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-08-07T10:29:21.224797+05:30[Asia/Kolkata]", comments = "Generator version: 7.14.0")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-08-07T10:50:50.869823+05:30[Asia/Kolkata]", comments = "Generator version: 7.14.0")
 public class UserDto {
   public static final String JSON_PROPERTY_ID = "id";
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   private Integer id;
 
   public static final String JSON_PROPERTY_NAME = "name";
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   private String name;
 
   public static final String JSON_PROPERTY_EMAIL = "email";
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   private String email;
 
   public UserDto() {
   }
 
-  public UserDto id(@javax.annotation.Nullable Integer id) {
+  public UserDto id(@jakarta.annotation.Nullable Integer id) {
     
     this.id = id;
     return this;
@@ -58,7 +58,7 @@ public class UserDto {
    * Get id
    * @return id
    */
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -69,11 +69,11 @@ public class UserDto {
 
   @JsonProperty(JSON_PROPERTY_ID)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setId(@javax.annotation.Nullable Integer id) {
+  public void setId(@jakarta.annotation.Nullable Integer id) {
     this.id = id;
   }
 
-  public UserDto name(@javax.annotation.Nullable String name) {
+  public UserDto name(@jakarta.annotation.Nullable String name) {
     
     this.name = name;
     return this;
@@ -83,7 +83,7 @@ public class UserDto {
    * Get name
    * @return name
    */
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -94,11 +94,11 @@ public class UserDto {
 
   @JsonProperty(JSON_PROPERTY_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setName(@javax.annotation.Nullable String name) {
+  public void setName(@jakarta.annotation.Nullable String name) {
     this.name = name;
   }
 
-  public UserDto email(@javax.annotation.Nullable String email) {
+  public UserDto email(@jakarta.annotation.Nullable String email) {
     
     this.email = email;
     return this;
@@ -108,7 +108,7 @@ public class UserDto {
    * Get email
    * @return email
    */
-  @javax.annotation.Nullable
+  @jakarta.annotation.Nullable
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
@@ -119,7 +119,7 @@ public class UserDto {
 
   @JsonProperty(JSON_PROPERTY_EMAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setEmail(@javax.annotation.Nullable String email) {
+  public void setEmail(@jakarta.annotation.Nullable String email) {
     this.email = email;
   }
 

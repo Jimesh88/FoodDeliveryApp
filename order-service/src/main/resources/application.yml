@@ -22,6 +22,5 @@ logging:
     org.hibernate.SQL: DEBUG
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
-
-  user-service:
-      base-url: http://localhost:8086
+user-service:
+  base-url: http://localhost:8086
